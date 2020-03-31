@@ -21,11 +21,12 @@ beforeEach(() => {
 
 const agent = request.agent(app);
 beforeEach(() => {
+  console.log('here');
   return agent
     .post('/api/v1/auth/login')
     .send({
-      username: 'username',
-      password: 'password'
+      username: 'username100',
+      password: 'password100'
     });
 });
 
