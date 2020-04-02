@@ -21,7 +21,6 @@ beforeEach(() => {
 
 const agent = request.agent(app);
 beforeEach(() => {
-  console.log('here');
   return agent
     .post('/api/v1/auth/login')
     .send({
